@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/parent_view"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ch_fondo_azul"
+        android:gravity="center"
+        android:minHeight="220.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:layout_marginRight="60.0dip"
+            android:orientation="vertical"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futura_medium_bt"
+                android:text="@string/register_hello"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:fontFamily="@font/futura_medium_bt"
+                android:maxLines="3"
+                android:text="@string/register_info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:theme="@style/ProgressBar.White"
+            style="?android:progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_xlarge"
+            android:visibility="gone" />
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xlarge">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_round_bg_white"
+                        android:hint="@string/register_name"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:minHeight="45.0dip"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingRight="@dimen/spacing_middle" />
+                    <EditText
+                        android:id="@+id/age"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@drawable/edit_text_round_bg_white"
+                        android:hint="@string/register_age"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingRight="@dimen/spacing_middle" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/country"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@drawable/edit_text_round_bg_white"
+                        android:hint="@string/register_country"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:ems="10" />
+
+                    <EditText
+                        android:visibility="gone"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@drawable/edit_text_round_bg_white"
+                        android:drawableEnd="@drawable/ic_expand_arrow"
+                        android:drawableRight="@drawable/ic_expand_arrow"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Country"
+                        android:text="Aruba"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingRight="@dimen/spacing_middle" />
+
+                    <Button
+                        android:id="@+id/email_sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_xlarge"
+                        android:background="@drawable/btn_h_amarillo"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:paddingLeft="@dimen/spacing_xxxlarge"
+                        android:paddingRight="@dimen/spacing_xxxlarge"
+                        android:text="@string/GO"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/abc_subtitle"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">Footprint for life</string>
+    <string name="short_lorem_ipsum">LOREM IPSUM DOLOR</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+
+    <string name="about">About</string>
+    <string name="about_last_update">Last Update</string>
+    <string name="about_last_update_info">August 2024</string>
+    <string name="about_main_idea">Original Idea</string>
+    <string name="about_website">Website</string>
+    <string name="about_developer_by">Developed by</string>
+    <string name="copyrights">Zonassoft, all rights reserved</string>
+
+    <string name="info">Introduction</string>
+    <string name="help">Help</string>
+    <string name="not_internet">there is no internet conection</string>
+    <string name="not_server">could no connet to server</string>
+    <string name="DETAILS">DETAILS</string>
+    <string name="description">Description</string>
+    <string name="NEXT">NEXT</string>
+    <string name="GOT_IT">GOT IT</string>
+    <string name="GO">GO</string>
+    <string name="SKIP">SKIP</string>
+    <string name="SAVE">SAVE</string>
+    <string name="medium_lorem_ipsum">Quisque imperdiet nunc at massa dictum volutpat. Etiam id orci ipsum. Integer id ex dignissim</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="logo_footprint">"  FOOTPRINT"</string>
+    <string name="logo_for">"FOR\n"</string>
+    <string name="logo_life">" LIFE"</string>
+
+    <string name="steps_know_title">Know</string>
+    <string name="steps_do_title">Act</string>
+    <string name="steps_share_title">Promote</string>
+
+    <string name="steps_know_desc">Know your carbon emissions and their effects.</string>
+    <string name="steps_do_desc">Act to reduce them.</string>
+    <string name="steps_share_desc">Promote the global change we need.</string>
+
+    <string name="results_tag_etica">ETHICAL</string>
+    <string name="results_tag_country">COUNTRY</string>
+    <string name="results_tag_world">WORLD</string>
+    <string name="results_tag_activities">ACTIVITIES</string>
+    <string name="results_tag_info">TOUCH TO SHARE</string>
+    <string name="calculator_title">personal data</string>
+    <string name="results_title">footprint profile</string>
+    <string name="plan_title">reduction plan</string>
+    <string name="activities_title">ways to reduce</string>
+
+    <string name="chart_personal">Personal</string>
+    <string name="chart_country">Country</string>
+    <string name="chart_world">World</string>
+    <string name="chart_etical">Ethical</string>
+    <string name="chart_days_lost">Days lost</string>
+    <string name="chart_life_days">Life days</string>
+    <string name="chart_present">Present</string>
+    <string name="chart_eco">Eco-committed</string>
+
+    <string name="chart_desc_val">Value: </string>
+
+    <string name="chart_parties_transport">TRANSPORT</string>
+    <string name="chart_parties_electricity">ELECTRICITY</string>
+    <string name="chart_parties_diet">DIET</string>
+    <string name="chart_parties_heating">HEATING</string>
+    <string name="chart_parties_other">OTHER</string>
+    <string name="chart_parties_accumulated">ACCUMULATED</string>
+    <string name="chart_parties_future">FUTURE</string>
+    <string name="chart_parties_days_lost">YEARS LOST</string>
+    <string name="chart_parties_income">INCOME</string>
+    <string name="chart_parties_emissions">CARBON EMISSIONS</string>
+    <string name="chart_parties_trees">TREES</string>
+    <string name="chart_parties_by_bus">by bus</string>
+    <string name="chart_parties_by_motor">by motorbike</string>
+    <string name="chart_parties_by_car">by car</string>
+    <string name="chart_parties_by_airplane">by airplane</string>
+    <string name="chart_parties_by_train">by train</string>
+    <string name="chart_parties_by_electricity">by electricity</string>
+    <string name="chart_parties_by_diet">by diet</string>
+    <string name="chart_parties_by_heating">by heating</string>
+    <string name="chart_parties_by_other">by other</string>
+
+    <string name="info_why">Why?</string>
+    <string name="info_what">What?</string>
+    <string name="info_how">How?</string>
+    <string name="info_who">Who?</string>
+
+    <string name="info_why_title_a">Privileges come with responsibilities.</string>
+    <string name="info_why_desc_a">\n Out of the 500 generations of Humanity, since the first agricultural settlements, ours in this beginning of the XXIst century, is the one with highest  average of wellbeing, life expectancy and access to knowledge.\nWhile it also bears the highest levels of injustice, inequality and damage to our planet and all its life species.</string>
+    <string name="info_why_title_b">Humanity must stop burning fossil fuels.</string>
+    <string name="info_why_desc_b">\n Changing our lifestyle and halting the burning of fossil fuels (result of sediments of thousands of millions of years yet burnt at a rate 10,000 times higher) is vital for the survival of our species and the rest, innocent, of forms of life in planet Earth.</string>
+    <string name="info_why_title_c">Our individual contribution is an ethical obligation.</string>
+    <string name="info_what_title_a">Know your carbon emissions (footprint) and their effects, act to reduce them and promote the global change we need.</string>
+    <string name="info_what_desc_a">\n This app will help you:\n<ul>\n<li>estimate your personal carbon emissions to the atmosphere</li>\n<li>compare them with your country and the world average, as well as with the "<b>ethical threshold</b>"</li>\n<li>know the impact excess emissions will cause  in the coming human generations  and to other firms of life</li>\n<li>explore ways in which you can reduce and mitigate your emissions</li>\n<li>draw a progressive plan to a low or no carbon life</li></ul>\n\nAnd so know which may be your carbon footprint through life, the damage you can prevent doing by reducing your emissions and ways to disseminate your commitment towards a global transformation towards a Humanity clean if carbon emissions and repairing the damage we have inflicted in our planet.</string>
+    <string name="info_what_title_b">Ethical threshold </string>
+    <string name="info_what_desc_b">\n Since 1850, nearly 2,600 billion metric tons of carbon dioxide (GtCO₂), equivalent to 702 billion tons of carbon, have been emitted into the atmosphere from fossil fuel combustion and land-use changes (1). In 2022, global carbon dioxide emissions from fossil fuels and industry totaled 37.15 billion metric tons (GtCO₂). These emissions are projected to have risen by 1.1 percent in 2023, reaching a record high of 37.55 GtCO₂ (2).
+        \n\n Scientists agree that serious dangers will arise if the global mean temperature increases by more than 2 degrees Celsius (3). The relationship between cumulative carbon emissions and global warming shows that one trillion tons of carbon emissions are linked to a 2-degree Celsius rise. To avoid exceeding this 2-degree increase, we can only emit an additional 300 billion tons of carbon, equivalent to 1,111 billion tons of carbon dioxide.
+        \n\n The UN estimates that the worlds population will grow from 8 billion in 2024 to 10.4 billion by 2100 (4). This means humans will accumulate 640 billion life years over the remainder of the century. To keep global warming under 2 degrees during this century (SDG 13.1), the maximum annual average carbon dioxide emissions per person should be 1.73 tons.
+        \n\n If current emission trends continue, global emissions could double to 75 billion tons by 2100 (5). This would result in cumulative emissions of 4.26 trillion tons from now until then, which is 3.8 times the remaining carbon dioxide budget. The resulting temperature increase could cause 218 million excess deaths and a loss of approximately 6,500 million life years, averaging about 20 years lost per excess death (5).
+        \n\n The excessive carbon emissions beyond ethical limits equate to about two months of life lost for every excess ton of carbon dioxide emitted annually. At current emission levels and trends, this translates to an average of one year lost for EU citizens and three years for those in the US.</string>
+    <string name="info_what_title_c">For more information consult :</string>
+
+    <string name="info_what_link_a" translatable="false">https://www.statista.com</string>
+    <string name="info_what_link_b" translatable="false">https://www.statista.com/statistics/276629/global</string>
+    <string name="info_what_link_c" translatable="false">https://img.climateinteractive.org</string>
+    <string name="info_what_link_d" translatable="false">https://population.un.org</string>
+    <string name="info_what_link_e" translatable="false">http://www.climate.gov</string>
+    <string name="info_what_link_f" translatable="false">https://www.peah.it</string>
+
+    <string name="info_how_title_a">By algorithms based on international statistics and their relation with your lifestyle pattern, the app estimates your carbon footprint and its effects.</string>
+    <string name="info_how_desc_a">\n This app is based on algorithms that use international data from 260 countries and regions during the last 60 years related to:\n<ul>\n<li>demographics</li>\n<li>life expectancy</li>\n<li>carbon emissions and their efficiency/carbon intensity and share/relation by/with electricity, transport, heating, diet, global trade, GDP pc.</li></ul></string>
+    <string name="info_who_title_a">A team from Cuba and with allies from around the world.</string>
+    <string name="info_who_desc_a">\nLed by the idea and algorithms of:\n\n<b>Juan Garay</b>, researcher and teacher of health, territorial and economic equity metrics in several universities in Spain, USA, Mexico, Cuba and Costa Rica.\n\nIn collaboration with:\n\n<b>David Chiriboga</b>,<b>Nefer Kelley</b> and <b>Adam Garay</b>.\n\nDesign and programming by:\n\n<b>Anabel Sanchez</b>,<b>Yoandry Leon</b> and <b>Dariel Infante</b>. </string>
+    <string name="info_touch">touch to discover...</string>
+
+    <string name="text_to_plant">If you see that despite your plan to reduce your lifelong carbon footprint, probably due mainly to cumulstive emissions till today, will be above the cumulative ethical threshold below which we´d prevent the point of no return of global warming, return to your plan and  increase the number of trees planted required to compensate the excess of emissions</string>
+    <string name="current_footprint">Current footprint</string>
+
+    <string name="quest_transport_title">transport</string>
+    <string name="quest_electricity_title">electricity</string>
+    <string name="quest_home_title">home</string>
+    <string name="quest_heating_title">heating</string>
+    <string name="quest_diet_title">diet</string>
+    <string name="quest_other_title">other</string>
+    <string name="quest_income_title">income</string>
+    <string name="quest_flights_title">flights</string>
+    <string name="quest_consumption_title">consumption</string>
+    <string name="quest_transport_car_subtitle">CAR TRAVELS</string>
+    <string name="quest_transport_moto_subtitle">MOTOBIKE TRAVELS</string>
+    <string name="quest_transport_bus_subtitle">BUS TRAVELS</string>
+    <string name="quest_transport_train_subtitle">BUS TRAVELS</string>
+    <string name="quest_flights_air_subtitle">AIR TRAVELS</string>
+
+    <string name="quest_transport_by_car">Estimate how many kilometers by car you use on a monthly average ?</string>
+    <string name="quest_transport_by_car_peoples">Number of people in car ?</string>
+    <string name="quest_transport_by_bus">Estimate how many kilometers by bus you traveled on a monthly average?</string>
+    <string name="quest_transport_by_moto">Estimate how many kilometers by motorbike you traveled on a monthly average?</string>
+    <string name="quest_transport_by_train">Estimate how many kilometers by train you traveled on an annual average?</string>
+
+    <string name="quest_electricity_kwatts">"Your average monthly kwatts-hour is "</string>
+    <string name="quest_electricity_kwattsr">Your average monthly of individual renewable energy is?</string>
+
+    <string name="quest_home_peoples">How many people live with you ?</string>
+    <string name="quest_home_gas">Your monthly avg lts of gas x heating is ?</string>
+    <string name="quest_home_wood">Estimate the annual average number of kilograms of firewood ?</string>
+
+    <string name="quest_income">Which is your monthly net (after taxes) salary per month ?</string>
+    <string name="quest_local">What percent of you food and consumer goods are locally produced?</string>
+    <string name="quest_diet">What type of diet do you adopt most frequently?</string>
+    <string name="quest_dep">How many people depend on your income?</string>
+
+    <string name="indicator_low">LOW</string>
+    <string name="indicator_very_low">VERY LOW</string>
+    <string name="indicator_meddiun">AROUND THE AVG</string>
+    <string name="indicator_high">HIGH</string>
+    <string name="indicator_very_high">VERY HIGH</string>
+
+    <string name="um_km_month">Km/month</string>
+    <string name="um_km_year">Km/year</string>
+    <string name="um_kw_month">Kw/month</string>
+    <string name="um_l_month">litres of gas/month</string>
+    <string name="um_peoples">people</string>
+    <string name="um_kg_month">Kg/month</string>
+    <string name="um_income_month">USD/month</string>
+
+
+    <string name="task_a_t">Reduce emissions.</string>
+    <string name="task_b_t">Use clean transport.</string>
+    <string name="task_c_t">Personal renewable energy.</string>
+    <string name="task_d_t">Change diet.</string>
+    <string name="task_e_t">Grow your own vegetables.</string>
+    <string name="task_f_t">Promote local production.</string>
+    <string name="task_g_t">Limit income per capita.</string>
+    <string name="task_h_t">Share in solidarity.</string>
+    <string name="task_i_t">Plant trees.</string>
+    <string name="task_j_t">Soil regeneration.</string>
+
+    <string name="register_info">Configure the initial data so that you know and plan your carbon footprint</string>
+    <string name="register_country_error">type a valid country</string>
+    <string name="register_age_error">type a valid age range</string>
+    <string name="register_hello">Hello</string>
+    <string name="register_name">Name</string>
+    <string name="register_age">Age</string>
+    <string name="register_country">Country</string>
+
+    <string name="task_a">Avoid or reduce carbon related goods and services.</string>
+    <string name="task_b">Use clean transport, electricity and heating from public sources.</string>
+    <string name="task_c">Personal renewable energy sources from individual sources.</string>
+    <string name="task_d">Follow progressively vegan diets.</string>
+    <string name="task_info">TASK</string>
+    <string name="task_e">Grow your own vegetables.</string>
+    <string name="task_f">Buy food from local farmers.</string>
+    <string name="task_g">Limit income per capita to levels below the equity upper threshold or, if higher.</string>
+    <string name="task_h">Share in solidarity/justice living or sharing with people whose income is below the dignity threshold.</string>
+    <string name="task_i">We calculated here the average carbon absorption by tree and theme tree density by hectare, which may have a compensation or at least mitigation impact in the excess (above ethical threshold) carbon footprint.\n\n There is approximately one hectare per person in the world, and a potential of reforestation  of half the present non-forest area, in balance with residential areas, communication pathways and farmlands.\n\n On the other side, the regeneration of forests is key to the connection with biodiversity and the cycles of micronutrients in communal agroecology.\n\n Carbon absorption by tree and reforested areas will depend on the tree species, its age, the climate, soil, altitude above sea level and other factors which, for the moment, and for the sake of simplicity and to result in a user-friendly app, have not been included in the calculation. </string>
+    <string name="task_j">"Community permaculture and agroecology towards local food and energy sovereignty enable the reduction of carbon emissions in all areas (through clean/traditional transport, energy, food, other goods/services and through sharing) and soil carbon absorption abortion the soil by recycling organic waste, carbon rich, and triggering other cycles of returning air carbon into the land, and, through time, underground, where it belongs.\n\n These effects will depend on the type of crops, soils, use of water, micronutrients, altitude above sea level and other factors which, for the moment, and for the sake of simplicity and to result in a user-friendly app, have not been included in the calculation."</string>
+
+    <string name="planner_intro">Here you may introduce the objectives of one, five, ten years and beyond, personal goals to reduce your carbon footprint by area of carbon-related activities, and by the mitigation or compensation of carbon absorption actions.</string>
+
+    <string name="activities_title_a">"Reducing carbon emissions. "</string>
+    <string name="activities_title_b">Carbon absorption activities.</string>
+
+    <string name="activities_intro_a">Here we help you explore ways to reduce your carbon footprint in each carbon-emission related area or activity.</string>
+
+    <string name="info_history_content">\n\n<b>The Story of the Hummingbird</b>\n\nOne day a terrible fire broke out in a forest - huge woodlands was suddenly engulfed by a raging wild fire.\n\n Frightened, all the animals fled their homes and ran out of the forest.\n As they came to the edge of a stream they stopped to watch the fire and they were feeling very discouraged and powerless.\n They were all bemoaning the destruction of their homes.\n Every one of them thought there was nothing they could do about the fire, except for one little hummingbird.\n\nThis particular hummingbird decided it would do something.\n It swooped into the stream and picked up a few drops of water and went into the forest and put them on the fire.\n\n Then it went back to the stream and did it again, and it kept going back, again and again and again.\nAll the other animals watched in disbelief; some tried to discourage the hummingbird with comments like, "Don't bother, it is too much, you are too little, your wings will burn, your beak is too tiny, it’s only a drop, you can't put out this fire."\n And as the animals stood around disparaging the little bird’s efforts, the bird noticed how hopeless and forlorn they looked.\n\n Then one of the animals shouted out and challenged the hummingbird in a mocking voice, "What do you think you are doing?" And the hummingbird, without wasting time or losing a beat, looked back and said, "I am doing what I can."</string>
+
+    <string name="info_cal_intro">When entering each of the following data, the app calculates carbon emissions by each type of activity.</string>
+    <string name="info_cal_transport">Here we apply the average conversion factors for each type of transport, of carbon emissions by kilometer travelled.\n\n These factors also depend on the type of engine, its age, the kind of fuel, speed, weight and altitude above sea level, factors which, for the moment, and for the sake of simplicity and to result in a user-friendly app, have not been included in the calculation.</string>
+    <string name="info_cal_electricity">Here we apply the national average consumption levels in kilowatts-hour, the proportion of renewable sources in the electricity matrix and the national average energy (carbon emissions by watt-hour) in each country, to the household monthly consumption of kilowatts-hour and the persons living in the it, deducting the share of individual renewable sources if present.\n\n In case of not knowing for the moment the consumption in kilowatts-hour  (reflected in the electricity bill) there is an option to estimate a low, average of high consumption vs. The national average.</string>
+    <string name="info_cal_heating">Here we apply the national levels of fuel consumption per person, to the energy carbon efficiency (carbon emissions by mass/volume of fuel) of each type of fossil fuels, people living in the household and the proportion of heating supplied by individual renewable sources.\n\n In case of not knowing for the moment the exact monthly heating fuel consumption (reflected in the  gas bill or others) there is an option to estimate the relation - low, average or high - with the national average consumption.</string>
+    <string name="info_cal_diet">One important parte if our personal carbon emissions is related to our daily food consumption.\n\n Here we take into account the national estimates of carbon emissions by the agro-industry, the proportion of imported food in the country and the ratios (relations with average carbon emissions by food production and consumption) of the types of diets, from those of high, average or low animal and dairy content (related with higher emissions) to those vegetarian and vegan.\n\n It is then adjusted to the proportion estimated of food from non-local origin (usually packaged).\n\n These factors will depend on the type of food, use of fertilizers and plaguicides, use of GMOs, distance from production site to final consumer and other factors which, for the moment, and for the sake of simplicity and to result in a user-friendly app, have not been included in the calculation.</string>
+    <string name="info_cal_others">The individual level of income is related to the expenses in purchasing goods and services, and to the level of savings.\n\n We estimated the carbon emissions related to the overall national average consumption (using gross domestic product -GDP- per capita), the proportion of consumption other than  transport, electricity, heating and food, and the proportion of the national economy depending on global trade, so as to estimate the level of carbon emissions in purchasing those other goods and services.</string>
+
+    <string name="chart_title_a">PRESENT AND PROJECTED LIFETIME EMISSIONS AT PRESENT RATE</string>
+    <string name="chart_title_b">IMPACT OF PERSONAL CARBON EMISSIONS ON HUMAN LIFE IN COMING GENERATION</string>
+    <string name="chart_title_c">DIFFERENCE OF EMISSIONS, EFFECTS AND COMPENSATION REQUIRED BY ECO-COMMITMENT</string>
+    <string name="chart_a">Comparison with national and global average and with the ethical threshold</string>
+    <string name="chart_b">Comparison of the prospect of cumulative carbon footprint through life time (at present levels), with the country´s, the world´s and the ethical threshold</string>
+    <string name="chart_c">Comparison, by areas, of the prospect of cumulative carbon footprint through life time (at present levels), with the country´s, world´s and the ethical threshold</string>
+    <string name="chart_d">Life Days Lost on coming generation due to annual carbon emissions</string>
+    <string name="chart_e">Life Days Lost on coming generation due to life carbon emissions at current rate</string>
+    <string name="chart_f">Annual income (after distribution with dependants) compared with national and global averages, and with \"equity upper threshold\"</string>
+    <string name="chart_g">Loss of life-days to others due to excess income</string>
+    <string name="chart_h">Trend of emissions by the personal eco-ethical plan</string>
+    <string name="chart_i">Carbon footprint without and with the eco-ethical plan</string>
+    <string name="chart_j">Life carbon impact without and with eco-ethical plan</string>
+    <string name="chart_m">Trees to be planted through lifetime so as to compensate excess emissions at present rate and with eco-ethical plan</string>
+
+    <string name="about_text">We encourage you to disseminate the challenge, principles, analysis, ethical and ecological options and mainly your plan, commitments and effects in preserving humans and other firms of life in this and coming generations, through your social networks and other ways of communication, networking and advocacy for the personal, collective and global transformation we urgently need to return to harmony with the planet and all its wonderful life in it.</string>
+
+    <string name="share_text" formatted="false">"Hi! I'm using an app where I can know how much I'm polluting our planet. My carbon footprint has been '%1$s'. Let's see yours! Search Footprint for Life app at http://play.google.com/store/apps/details?id=com.zonassoft.footprintforlife"</string>
+
+    <string name="option_diet_average_western">Average western</string>
+    <string name="option_diet_meat_lover">Meat lover</string>
+    <string name="option_diet_no_beef_diet">No beef diet</string>
+    <string name="option_diet_vegetarian">Vegetarian</string>
+    <string name="option_diet_vegan">Vegan</string>
+    <string name="quest_transport_by_airplane">Estimate how many kilometers by plane you traveled on an annual average?</string>
+
+
+
+
+</resources>

@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HuellaPorLaVida" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/blue_grey_600</item>
+        <item name="android:dialogTheme">@style/Dialog.Theme</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="Theme.HuellaPorLaVida" parent="Base.Theme.HuellaPorLaVida" />
+
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Dialog.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="@style/Theme.HuellaPorLaVida">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="android:textColorPrimary">@color/grey_60</item>
+    </style>
+
+    <!--style for ripple library-->
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">false</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+
+    <style name="RippleStyleYellow" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">@color/ch_fondo_amarillo</item>
+    </style>
+
+    <style name="RippleStyleBlue" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">@color/ch_fondo_azul</item>
+    </style>
+
+    <style name="RippleStyleRosado" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">@color/ch_fondo_rosado</item>
+    </style>
+
+    <style name="RippleStyleDark" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#80000000</item>
+    </style>
+
+    <!-- Base application text. -->
+    <style name="Text.title" parent="@style/Theme.HuellaPorLaVida">
+        <item name="android:textSize">@dimen/abc_title</item>
+        <item name="android:fontFamily">@font/futura_medium_bt</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.subtitle" parent="@style/Theme.HuellaPorLaVida">
+        <item name="android:textSize">@dimen/abc_subtitle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/futura_medium</item>
+    </style>
+
+    <style name="Text.info" parent="@style/Theme.HuellaPorLaVida">
+        <item name="android:textSize">@dimen/abc_subtitle</item>
+        <item name="android:fontFamily">@font/futura_medium_bt</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.futura" parent="@style/Theme.HuellaPorLaVida">
+        <item name="android:fontFamily">@font/futura_medium_bt</item>
+    </style>
+
+    <!-- Base application edit_text. -->
+    <style name="EditText.Flat.Grey" parent="@style/Theme.HuellaPorLaVida">
+        <item name="android:textColorHint">@color/grey_40</item>
+        <item name="android:fontFamily">@font/futura_medium_bt</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/grey_90</item>
+    </style>
+
+    <!-- Base application button. -->
+    <style name="Button.Primary.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Base application progress_bar. -->
+    <style name="ProgressBar.White" parent="@style/Theme.HuellaPorLaVida">
+        <item name="colorPrimary">@color/ch_fondo_azul</item>
+        <item name="colorAccent">@color/ch_fondo_azul</item>
+    </style>
+
+    <style name="ProgressBar.Blue" parent="@style/Theme.HuellaPorLaVida">
+        <item name="colorPrimary">@color/mdtp_white</item>
+        <item name="colorAccent">@color/mdtp_white</item>
+    </style>
+
+</resources>

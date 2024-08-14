@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@id/bt_close"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@android:color/black"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/futura_medium_bt"
+            android:gravity="center"
+            android:text="@string/help"
+            android:textAppearance="@style/Text.title"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="@dimen/actionBarSize"
+            android:layout_height="?actionBarSize" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nested_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_cal_intro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_90"
+                    app:fontFamily="@font/futura_medium_bt" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:background="@color/grey_20" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/quest_transport_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/info_cal_transport"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_h_transporte_fondo_blanco" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="1"
+                    android:text="@string/quest_transport_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/quest_electricity_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/info_cal_electricity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_h_electricidad_fondo_blanco" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="1"
+                    android:text="@string/quest_electricity_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/quest_heating_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/info_cal_heating"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_h_casa_fondo_blanco" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="1"
+                    android:text="@string/quest_heating_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/quest_diet_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/info_cal_diet"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_h_dieta_fondo_blanco_y_azul" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:maxLines="1"
+                    android:text="@string/quest_diet_title"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/quest_other_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:lineSpacingExtra="@dimen/spacing_medium"
+                    android:text="@string/info_cal_others"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/spacing_large" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

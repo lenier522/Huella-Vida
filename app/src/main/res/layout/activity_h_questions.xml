@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/parent_view"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_info"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/calculator_title"
+            android:textAppearance="@style/Text.title"
+            android:textColor="@color/grey_80"
+            app:fontFamily="@font/futura_medium_bt" />
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_done" />
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:theme="@style/ProgressBar.White"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="40dp"
+            android:layout_height="?actionBarSize"
+            android:padding="@dimen/spacing_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_mxlarge"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_mxlarge"
+            android:paddingBottom="@dimen/spacing_xxlarge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/register_age"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/p_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/register_country"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+
+            <AutoCompleteTextView
+                android:id="@+id/p_country"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_car"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/kms_car_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_km_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_car_peoples"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/number_p_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_peoples"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_bus"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/kms_bus_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_km_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_moto"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/kms_moto_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_km_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_train"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/kms_train_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_km_year"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_transport_by_airplane"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/kms_air_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_km_year"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_electricity_kwatts"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <SeekBar
+                    android:id="@+id/seek_bar_e"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:max="5"
+                    android:progress="5"
+                    android:thumb="@drawable/seek_thumb_primary_outline" />
+                <TextView
+                    android:id="@+id/e_indicator"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="LOW"
+                    android:fontFamily="@font/futura_medium_bt"/>
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/whatts_e"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_kw_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_electricity_kwattsr"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/whatts_r_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_kw_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_home_peoples"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/peoples_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_peoples"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_home_gas"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <SeekBar
+                    android:id="@+id/seek_bar_g"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:max="5"
+                    android:progress="5"
+                    android:thumb="@drawable/seek_thumb_primary_outline" />
+                <TextView
+                    android:id="@+id/g_indicator"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="LOW"
+                    android:fontFamily="@font/futura_medium_bt"/>
+
+            </LinearLayout>
+            <EditText
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/gas_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_l_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_home_wood"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/wood_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_kg_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_diet"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/type_d"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_local"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40" />
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/local_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_income"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40"/>
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_income_month"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="@string/quest_dep"
+                android:fontFamily="@font/futura_medium_bt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_40"/>
+            <EditText
+                android:layout_marginTop="@dimen/spacing_small"
+                android:id="@+id/g_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/um_peoples"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/grey_40"
+                android:fontFamily="@font/futura_medium_bt"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

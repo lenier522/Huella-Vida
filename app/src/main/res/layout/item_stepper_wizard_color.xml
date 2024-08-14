@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/lyt_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/spacing_xlarge">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="?actionBarSize">
+
+        <ImageView
+            android:id="@id/image"
+            android:layout_width="250.0dip"
+            android:layout_height="250.0dip"
+            android:padding="@dimen/spacing_xlarge"
+            android:src="@drawable/img_wizard_1"/>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready to Travel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/futura_medium_bt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:textAlignment="center"
+            android:text="Find Featured and Premium \nItem From Our Store"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:fontFamily="@font/futura_medium_bt"
+            android:textColor="@color/grey_20" />
+    </LinearLayout>
+</RelativeLayout>

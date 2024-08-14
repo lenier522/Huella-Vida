@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RippleStyleWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_small">
+
+
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/task_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TASK 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:fontFamily="@font/futura_medium_bt" />
+
+        <View
+            android:layout_width="@dimen/spacing_small"
+            android:layout_height="0.0dip" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4.0dip"
+            app:cardElevation="1.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Take bike"
+                            android:fontFamily="@font/futura_medium_bt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/grey_60"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0" />
+
+                    <ImageView
+                        android:elevation="5dp"
+                        android:id="@+id/image"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:src="@drawable/task_bicicleta_fondo_blanco"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:maxLines="1"
+                    android:text="Frecuentry"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/overlay_dark_10" />
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/spacing_xsmall">
+
+                    <Button
+                        android:id="@+id/btn_action"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:text="@string/DETAILS"
+                        android:textColor="@color/grey_60"
+                        android:textSize="12.0sp" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_xmlarge"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:padding="@dimen/spacing_middle"
+                        android:tint="@color/grey_60"
+                        app:srcCompat="@drawable/ic_subject" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

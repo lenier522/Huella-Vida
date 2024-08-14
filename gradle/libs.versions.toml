@@ -1,0 +1,55 @@
+[versions]
+agp = "8.4.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+gson = "2.11.0"
+materialRipple = "1.0.2"
+materialdatetimepicker = "4.2.3"
+circularimageview = "4.3.1"
+glide = "5.0.0-rc01"
+shimmer = "0.5.0"
+runtime = "1.1.1"
+compiler = "1.1.1"
+retrofit = "2.11.0"
+converterGson = "2.11.0"
+loggingInterceptor = "5.0.0-alpha.14"
+mpandroidchart = "v3.1.0"
+materialChipsInput = "1.0.5"
+nachos = "1.1.1"
+flexbox = "0.3.2"
+crystalrangeseekbar = "1.1.3"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+material-ripple = { group = "com.balysv", name = "material-ripple", version.ref = "materialRipple" }
+materialdatetimepicker = { group = "com.wdullaer", name = "materialdatetimepicker", version.ref = "materialdatetimepicker" }
+circularimageview = { group = "com.mikhaellopez", name = "circularimageview", version.ref = "circularimageview" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+runtime = { group = "android.arch.persistence.room", name = "runtime", version.ref = "runtime" }
+compiler = { group = "android.arch.persistence.room", name = "compiler", version.ref = "compiler" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+materialchipsInput = { group = "com.github.pchmn", name = "MaterialChipsInput", version.ref = "materialChipsInput"}
+nachos = { group = "com.hootsuite.android", name = "nachos", version.ref = "nachos"}
+flexbox = { group = "com.google.android", name = "flexbox", version.ref = "flexbox"}
+crystalrangeseekbar = { group = "com.crystal", name = "crystalrangeseekbar", version.ref = "crystalrangeseekbar"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

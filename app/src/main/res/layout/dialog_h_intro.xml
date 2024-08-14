@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mdtp_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/spacing_middle"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@id/bt_close"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@android:color/black"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/info"
+            android:textAppearance="@style/Text.title"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="@dimen/actionBarSize"
+            android:layout_height="?actionBarSize" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+            <LinearLayout
+                android:id="@+id/lyt_why"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/img_h_hombre_y" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_why"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="@string/info_touch"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:id="@+id/bt_toggle_why"
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:tint="@color/grey_10"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_expand_why"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_why_title_a"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_why_desc_a" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_why_title_b"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_why_desc_b" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_why_title_c"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_history_content" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="@dimen/spacing_mlarge"
+                android:background="@color/overlay_light_10" />
+
+            <LinearLayout
+                android:id="@+id/lyt_what"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/img_h_hombre_y" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_what"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="@string/info_touch"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:id="@+id/bt_toggle_what"
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:tint="@color/grey_10"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_expand_what"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_what_title_a"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_desc_a" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_what_title_b"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_desc_b" />
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_what_title_c"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:id="@+id/what_link_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_a"
+                    android:textColor="@color/ch_fondo_azul"/>
+                <TextView
+                    android:id="@+id/what_link_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_b"
+                    android:textColor="@color/ch_fondo_azul"/>
+
+                <TextView
+                    android:id="@+id/what_link_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_c"
+                    android:textColor="@color/ch_fondo_azul"/>
+                <TextView
+                    android:id="@+id/what_link_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_d"
+                    android:textColor="@color/ch_fondo_azul"/>
+
+                <TextView
+                    android:id="@+id/what_link_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_e"
+                    android:textColor="@color/ch_fondo_azul"/>
+                <TextView
+                    android:id="@+id/what_link_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_what_link_f"
+                    android:textColor="@color/ch_fondo_azul"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="@dimen/spacing_mlarge"
+                android:background="@color/overlay_light_10" />
+
+            <LinearLayout
+                android:id="@+id/lyt_how"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/img_h_hombre_v" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_how"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="@string/info_touch"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:id="@+id/bt_toggle_how"
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:tint="@color/grey_10"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_expand_how"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_how_title_a"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_how_desc_a" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="@dimen/spacing_mlarge"
+                android:background="@color/overlay_light_10" />
+
+            <LinearLayout
+                android:id="@+id/lyt_who"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/img_h_hombre_a" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_who"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="@string/info_touch"
+                        android:fontFamily="@font/futura_medium_bt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_40" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:id="@+id/bt_toggle_who"
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:tint="@color/grey_10"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_expand_who"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="@string/info_who_title_a"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:paddingLeft="@dimen/spacing_smlarge"
+                    android:text="@string/info_who_desc_a" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="@dimen/spacing_mlarge"
+                android:background="@color/overlay_light_10" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
